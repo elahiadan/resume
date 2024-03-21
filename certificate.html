@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adan Elahi</title>
+    <title>Certificates | Adane Elahi Ansari</title>
     <style>
         .main-box {
             width: 100%;
@@ -13,11 +13,13 @@
 
         div .mypic {
             margin: 0px;
+            padding: 0px 200px;
 
         }
 
         .mypic img {
             width: 100%;
+            border: 5px solid red;
         }
 
         .navigation::before {
@@ -49,26 +51,7 @@
     <div class="main-box heading">
         <div class="bod">
             <div class="bod2">
-                <div class="mypic"><img src="certificate/vayuz_experience.jpeg"  class="body"></div>
-                <div class="mypic"><img src="certificate/vayuz_internship.jpeg"  class="body"></div>
-                <div class="mypic"><img src="certificate/tantrabyte_internship.jpeg" class="body"></div>
-                <div class="mypic"><img src="certificate/nielit_php.jpeg" class="body"></div>
-                <div class="mypic"><img src="certificate/gl_aws.jpeg" class="body"></div>
-                <div class="mypic"><img src="certificate/gl_nodejs.jpeg"  class="body"></div>
-                <div class="mypic"><img src="certificate/google_digital_marketing.jpeg"  class="body"></div>
-                <div class="mypic"><img src="certificate/gl_my_sql_basic.jpeg"  class="body"></div>
-                <div class="mypic"><img src="certificate/gl_my_sql_beginner.jpeg"  class="body"></div>
-                <div class="mypic"><img src="certificate/gl_react.jpeg"  class="body"></div>
-                <div class="mypic"><img src="certificate/gl_php.jpeg" class="body"></div>
-                <div class="mypic"><img src="certificate/gl_model_deployment_using_heroku.jpeg" class="body"></div>
-                <div class="mypic"><img src="certificate/gl_javascript.jpeg" class="body"></div>
-                <div class="mypic"><img src="certificate/gl_github.jpeg"  class="body"></div>
-                <div class="mypic"><img src="certificate/hl_html.jpeg"  class="body"></div>
-                <div class="mypic"><img src="certificate/gl_cyber_security.jpeg"  class="body"></div>
-                <div class="mypic"><img src="certificate/gl_aws_domain_service.jpeg"  class="body"></div>
-                <div class="mypic"><img src="certificate/gl_aptitude.jpeg" class="body"></div>
-                <div class="mypic"><img src="certificate/aws_awesome_certificate.png" class="body"></div>
-
+                <span id="certificate"></span>
             </div>
 
         </div>
@@ -83,5 +66,67 @@
         </footer>
 
 </body>
+<script>
+    function hello(){
+        let array = [
+                    "certificate/MartvalleyExperienceCerificate.jpg",
+                    "certificate/VAYUZExperienceCertificate.jpg",
+                    "certificate/VAYUZInternshipCertificate.jpg",
+                    "certificate/CertificateNIELIT.jpg",
+                    "certificate/CertificateInternshipTanrabyte.jpg",
+                    "certificate/BasicConceptsofProgramming.jpg",
+                    "certificate/ScalerReactCertificate.png",
+                    "certificate/ReactJSinHindi.jpg",
+                    "certificate/JavaScriptinHindi.jpg",
+                    "certificate/IntroductiontoJavaScript.jpg",
+                    "certificate/NodeJSinHindi.jpg",
+                    "certificate/NodeJS.jpg",
+                    "certificate/PHPforBeginners.jpg",
+                    "certificate/MySQLBasics.jpg",
+                    "certificate/AWSOMECertificate.png",
+                    "certificate/ReactJSTutorial.jpg",
+                    "certificate/AWSS3inHindi.jpg",
+                    "certificate/CSSinHindi.jpg",
+                    "certificate/HTMLinHindi.jpg",
+                    "certificate/FrontEndDevelopmentHTML.jpg",
+                    "certificate/GitTutorialinHindi.jpg",
+                    "certificate/QuantitativeAptitudeBasics.jpg", 
+                    "certificate/ExcelforBeginners.jpg",
+                    "certificate/PythonProgramminginHindi.jpg",
+                    "certificate/SQLProjectsforBeginners.jpg",
+                    "certificate/IntroductiontoDataScience.jpg",
+                    "certificate/OpenCVTutorial.jpg",
+                    "certificate/AWSComputeServicesInHindi.jpg",
+                    "certificate/AWSDomainServicesinHindi.jpg",
+                    "certificate/AWSforBeginnersinHindi.jpg",
+                    "certificate/TheFundamentalsofDigitalMarketing.jpg",
+                    "certificate/HeapDataStructure.jpg",
+                    "certificate/MicrosoftAzureEssentials.jpg",
+                    "certificate/DockerBestPractices.jpg",
+                    "certificate/ModelDeploymentUsingHeroku.jpg",
+                    "certificate/SmartEnglishBasicsforProfessionals.jpg",
+                    "certificate/IntroductiontoEthicalHacking.jpg",
+                    "certificate/TypesofCyberSecurity.jpg",
+                    "certificate/WordPressinHindi.jpg"
+                ];
+                    
+                    array.forEach(function (value) {
+                        var img = document.createElement('img');
+                        img.src = value;
+                        var div = document.createElement('div');
+                        div.className = 'mypic';
+                        div.appendChild(img);
+                        document.getElementById('certificate').appendChild(div);
+                    });
+
+                    // let html ='';
+                    // array.forEach(function (value) {
+                    //     html +='<div class="mypic"><img src="'+value+'"  class="body"></div>';  
+                    // });
+                    // document.getElementById('certificate').innerHTML = html;
+
+    }
+    hello();
+</script>
 
 </html>
